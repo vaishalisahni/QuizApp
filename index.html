@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <!-- Start screen -->
+        <div class="start-screen">
+            <h1 class="start-screen-header">
+                Challenge Your Brain <br />
+                Start the Quiz!
+            </h1>
+            
+            <div class="requirements">
+                <div class="requirement">
+                    <span class="label"> Select Number of Questions: </span>
+                    <select name="numQuestions" id="numQuestions" class="options">
+                        <option value="">Number of Questions</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </select>
+                </div>
+
+                <div class="requirement">
+                    <span class="label"> Select the Difficulty Level: </span>
+                    <select name="difficultyLevel" id="difficultyLevel" class="options">
+                        <option value="">Select the Difficulty Level</option>
+                        <option value="basic">Basic</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                        <option value="veryHard">Very Hard</option>
+                        <option value="extreme">Extreme</option>
+                        <option value="ultimate">Ultimate</option>
+                    </select>
+                </div>
+            </div>
+            <div class="start-quiz">
+                <img src="assets/play.svg" alt="play-button" class="play-btn" />
+            </div>
+        </div>
+
+        <!-- Quiz -->
+
+        <div class="quiz-app">
+            <div class="quiz-header">
+                <div class="quiz-header-content">
+                    <h1 class="quiz-title">My Quiz App</h1>
+                    <div class="quiz-timer">
+                        Time Left
+                        <span class="quiz-timer-value"></span>
+                    </div>
+                </div>
+                <div class="quiz-progress"></div>
+            </div>
+
+            <div class="quiz-question-container">
+                <div class="quiz-question">
+                    <span class="quiz-questions-current"></span>.
+                    <h2 class="quiz-question-text"></h2>
+                </div>
+                <div class="quiz-options">
+                    <!-- options would come here -->
+                </div>
+            </div>
+
+            <div class="quiz-question-answers-container">
+                <!-- <div class="resultant-quiz-question">
+                    <h2 class="resultant-quiz-question-text">  vbnvbnv
+                    </h2>
+                    <div class="correct-quiz-options quiz-option correct">
+                        options would come herefgnvn
+                    </div>
+               </div> -->
+            </div>
+            <div class="hr"></div>
+            <div class="quiz-questions-deatils">
+                <span class="quiz-questions-current"></span> of
+                <span class="quiz-questions-total"></span> Questions
+            </div>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
